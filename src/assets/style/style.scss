@@ -9,15 +9,15 @@ body {
 }
 
 .header-sticky {
-    position: absolute;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 21;
     margin-top: 50px;
     margin-right: 80px;
     margin-left: 80px;
     padding: 0px 35px;
     height: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     .logo {
         a {
@@ -59,8 +59,12 @@ body {
 }
 
 .navbar-mobile {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    position: fixed;
+    z-index: 21;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     .mobile-menu-button {
         width: 57px;
@@ -69,11 +73,51 @@ body {
     }
 }
 
+.mobile-menu {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    transition: $transition;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mobile-menu-links {
+        .list-unstyled {
+            li {
+                border-bottom: #515151 1px solid;
+
+                a {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    .mobile-menu-contact {
+        h3 {
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
 //HEADER
 
 //HERO
 
 .hero {
+    overflow: hidden;
     position: relative;
     padding-top: 330px;
     padding-bottom: 150px;
@@ -81,7 +125,7 @@ body {
     border-bottom: 1px #eeeeee solid;
 
     @media screen and (max-width:992px) {
-        padding-top: 20px;
+        padding-top: 125px;
     }
 
     .social {
@@ -131,18 +175,20 @@ body {
     .hero-image {
         position: absolute;
         z-index: 5;
+
         @media screen and (max-width:992px) {
             position: relative;
         }
     }
 
     .hero-box {
-        z-index: 200;
+        z-index: 20;
 
         p {
             opacity: 75%;
             font-weight: 500;
             font-size: 18px;
+            text-align: justify;
 
             @media screen and (max-width:992px) {
                 font-size: 16px;
@@ -164,3 +210,252 @@ body {
 }
 
 //HERO
+
+//BRAND SHOWCASE
+
+.brands {
+    .brand-item {
+        transition: $transition;
+
+        &:hover {
+            opacity: .75;
+            transform: scale(1.05);
+        }
+    }
+}
+
+//BRAND SHOWCASE
+
+// WHY CHOOSE US
+
+.why-choose-us {
+    .header {
+        .title {
+            h1 {
+                font-size: 20px !important;
+            }
+        }
+    }
+
+    .content {
+        .card {
+            border: none;
+            border-radius: 8px;
+
+            .card-title {
+                h3 {
+                    transition: $transition;
+                }
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 75px;
+                height: 75px;
+                background-color: #FD346E;
+            }
+
+            .card-content {
+                border: transparent 1px solid;
+                transition: $transition;
+                height: 100%;
+            }
+
+            &:nth-child(2) {
+                box-shadow: 0px 26px 50px rgba(206, 210, 225, 0.24);
+
+                .card-content {
+                    border: #eeeeee 1px solid;
+                    border-radius: 8px;
+                }
+
+                .icon {
+                    background-color: #82CEFD;
+                }
+            }
+
+            &:nth-child(3) {
+                .icon {
+                    background-color: #5956E9;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 26px 50px rgba(206, 210, 225, 0.24);
+
+                .card-content {
+                    border: #eeeeee 1px solid;
+                    border-radius: 8px;
+
+                    .bounce {
+                        animation: bounce 2s ease;
+                    }
+
+                    @keyframes bounce {
+                        10% {
+                            transform: translateY(0%);
+                        }
+
+                        50% {
+                            transform: translateY(-15%);
+                        }
+
+                        100% {
+                            transform: translateY(0%);
+                        }
+                    }
+
+                    .card-title {
+                        h3 {
+                            color: #FD346E;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .card-content {
+                        border: #eeeeee 1px solid;
+                        border-radius: 8px;
+
+                        .card-title {
+                            h3 {
+                                color: #82CEFD;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .card-content {
+                        border: #eeeeee 1px solid;
+                        border-radius: 8px;
+
+                        .card-title {
+                            h3 {
+                                color: #5956E9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// WHY CHOOSE US
+
+//INDUSTRIES
+
+.industries {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    border-radius: 20px;
+    background-color: #F7F8FD;
+
+    @media screen and (max-width:992px) {
+        padding-top: 70px;
+    }
+
+    .content {
+        padding-left: 90px;
+        padding-right: 90px;
+
+        @media screen and (max-width:992px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .industries-item {
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 25px 35px;
+            transition: $transition;
+            box-shadow: 0px 13px 12px rgba(181, 184, 200, 0.03);
+            border: transparent 1px solid;
+
+            p {
+                user-select: none;
+            }
+
+            @media screen and (max-width:992px) {
+                width: 100%;
+                margin: 8px !important;
+
+                p {
+                    font-size: 15px !important;
+                }
+            }
+
+            &:hover {
+                .bounce {
+                    animation: bounce 2s ease;
+                }
+
+                @keyframes bounce {
+                    10% {
+                        transform: translateY(0%);
+                    }
+
+                    50% {
+                        transform: translateY(-15%);
+                    }
+
+                    100% {
+                        transform: translateY(0%);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//INDUSTRIES
+
+//PROJECTS
+
+.projects {
+    overflow: hidden;
+
+    .header {
+        .title {
+            h1 {
+                font-size: 20px !important;
+            }
+        }
+    }
+
+    .content {
+        .project-image {
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: $transition;
+
+                &:hover {
+                    filter: brightness(75%);
+                    transform: scale(1.05);
+
+                }
+            }
+        }
+    }
+
+}
+
+//PROJECTS
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #5956E9 !important;
+    border-radius: 8px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
