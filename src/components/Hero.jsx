@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HeroShape from "../assets/img/hero-shape.webp";
-import HeroImage from "../assets/img/hero-image.webp";
+import HeroShape from "../assets/img/hero-shape.png";
+import HeroImage from "../assets/img/hero-image.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faYoutube,
