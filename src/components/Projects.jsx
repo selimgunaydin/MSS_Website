@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <>
-      <div className="projects mb-5">
+      <div id="projects" className="projects">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

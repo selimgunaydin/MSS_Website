@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   const [scrollButton, setScrollButton] = useState("d-none");
@@ -37,6 +39,7 @@ function App() {
       <BrandShowcase />
       <WhyChooseUs />
       <Industries />
+      <About/>
       <Projects />
       <motion.button
         onClick={handleScrollTop}
@@ -44,6 +47,7 @@ function App() {
       >
         <FontAwesomeIcon icon={faAngleDoubleUp} color="#fff" />
       </motion.button>
+      <Footer/>
     </>
   );
 }

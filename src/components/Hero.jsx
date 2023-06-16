@@ -76,7 +76,7 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="hero-text display-4 fw-bold mb-3 text-center text-lg-start"
+                className="hero-text display-4 fw-bold mb-3"
               >
                 Anahtar teslim
                 <br />
@@ -86,21 +86,23 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="text-secondary  mb-4 lh-lg deneme"
+                className="text-secondary  mb-4 lh-lg"
               >
                 MSS olarak, güzel, kullanışlı ürünlerin tasarımı, üretimi ve
                 desteği konusunda uzmanlaşmış durumdayız. İsteklerinizi hızlı
                 bir şekilde ve etkileyici bir verimlilikle gerçekleştiriyoruz.
               </motion.p>
-              <div className="d-flex justify-content-center justify-content-lg-start">
-                <motion.button
+              <div className="d-flex">
+                <motion.a
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="hero-button btn btn-info px-5 px-lg-3 px-lg-5 py-3 py-lg-4 text-white"
+                  target="_blank"
+                  href="https://wa.me/+905312851812"
+                  className="hero-button btn btn-info text-white px-5 px-lg-3 px-lg-5 py-3 py-lg-4 text-white"
                 >
                   Bize Ulaşın
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </div>

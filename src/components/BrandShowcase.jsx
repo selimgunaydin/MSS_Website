@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function BrandShowcase() {
   return (
-    <div className="container mb-5">
+    <div id="industries" className="container mb-5">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

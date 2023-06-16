@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="d-none d-lg-block">
+      <div id="header" className="d-none d-lg-block">
         <motion.div
           initial={{ top: -100 }}
           animate={{ top: 0 }}
@@ -59,27 +59,27 @@ export default function Header() {
                     </li>
                     <li className="me-5">
                       <a
-                        href="#"
+                        href="#industries"
                         className="text-decoration-none text-secondary fw-semibold"
                       >
                         Hizmetlerimiz
-                        <FontAwesomeIcon icon={faAngleDown} className="ms-1" />
+                        {/* <FontAwesomeIcon icon={faAngleDown} className="ms-1" /> */}
                       </a>
                     </li>
                     <li className="me-5">
                       <a
-                        href="#"
-                        className="text-decoration-none text-secondary fw-semibold"
-                      >
-                        Projelerimiz
-                      </a>
-                    </li>
-                    <li className="me-5">
-                      <a
-                        href="#"
+                        href="#about"
                         className="text-decoration-none text-secondary fw-semibold"
                       >
                         Hakkımızda
+                      </a>
+                    </li>
+                    <li className="me-5">
+                      <a
+                        href="#projects"
+                        className="text-decoration-none text-secondary fw-semibold"
+                      >
+                        Projelerimiz
                       </a>
                     </li>
                   </ul>
@@ -98,7 +98,7 @@ export default function Header() {
                       color="blue"
                     />
                   </a>
-                  <motion.button
+                  <motion.a
                     animate={{
                       x: [-5, 5, -5], // X eksenindeki sallanma hareketi
                     }}
@@ -107,10 +107,12 @@ export default function Header() {
                       ease: "easeInOut",
                       repeat: Infinity, // Sürekli tekrar etmesini sağlar
                     }}
+                    target="_blank"
+                    href="https://wa.me/+905312851812"
                     className="header-button btn btn-white px-4 py-3 fw-semibold rounded-3"
                   >
                     Bize Ulaşın
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </div>
