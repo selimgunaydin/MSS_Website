@@ -1,7 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDotCircle,
+  faArrowUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import sg from "../assets/img/SG.png";
+import gunaydin from "../assets/img/gunaydin.png";
+import mss from "../assets/img/MSS.png";
 
 export default function Projects() {
   return (
@@ -14,7 +20,7 @@ export default function Projects() {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="header mb-5"
+          className="header mb-4"
         >
           <div className="title d-flex align-items-center justify-content-center text-center mb-4">
             <FontAwesomeIcon icon={faDotCircle} color="#ffdc60" />
@@ -26,9 +32,13 @@ export default function Projects() {
             <h3 className="fw-bold display-5  w-75">Son projelerimiz</h3>
           </div>
         </motion.div>
-        <div className="content">
+        <div className="content container pb-2">
           <div className="row">
-            <div className="col-12 col-lg-6 p-0">
+            <a
+              href="http://e-commerce.mssdev.online/"
+              target="_blank"
+              className="col-12 col-lg-4 p-2"
+            >
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -36,15 +46,27 @@ export default function Projects() {
                   duration: 0.5,
                   ease: "easeInOut",
                 }}
-                className="project-image"
+                className="project-image rounded-2"
               >
-                <img
-                  src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.1.jpg"
-                  alt=""
-                />
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>E-Ticaret</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
+                <img src={mss} alt="" />
               </motion.div>
-            </div>
-            <div className="col-12 col-lg-6 p-0">
+            </a>
+            <a
+              href="http://www.selimgunaydin.com/"
+              target="_blank"
+              className="col-12 col-lg-4 p-2"
+            >
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -52,31 +74,78 @@ export default function Projects() {
                   duration: 0.7,
                   ease: "easeInOut",
                 }}
-                className="project-image"
+                className="project-image rounded-2"
               >
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>Kişisel Pörtföy</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
+                <img src={sg} alt="" />
+              </motion.div>
+            </a>
+            <a
+              href="http://gunaydindekorasyon.com/"
+              target="_blank"
+              className="col-12 col-lg-4 p-2"
+            >
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                }}
+                className="project-image rounded-2"
+              >
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>Kurumsal Tanıtım</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
+                <img src={gunaydin} alt="" />
+              </motion.div>
+            </a>
+            <a href="#" target="_blank" className="col-12 col-lg-4 p-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  duration: 0.7,
+                  ease: "easeInOut",
+                }}
+                className="project-image rounded-2"
+              >
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>Kurumsal Tanıtım</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
                 <img
                   src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.2.jpg"
                   alt=""
                 />
               </motion.div>
-            </div>
-            <div className="col-12 col-lg-6 p-0">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-                className="project-image"
-              >
-                <img
-                  src="	https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.3.jpg"
-                  alt=""
-                />
-              </motion.div>
-            </div>
-            <div className="col-12 col-lg-6 p-0">
+            </a>
+            <a href="#" target="_blank" className="col-12 col-lg-4 p-2">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -84,14 +153,52 @@ export default function Projects() {
                   duration: 0.7,
                   ease: "easeInOut",
                 }}
-                className="project-image"
+                className="project-image rounded-2"
               >
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>Kurumsal Tanıtım</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
+                <img
+                  src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.3.jpg"
+                  alt=""
+                />
+              </motion.div>
+            </a>
+            <a href="#" target="_blank" className="col-12 col-lg-4 p-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  duration: 0.7,
+                  ease: "easeInOut",
+                }}
+                className="project-image rounded-2"
+              >
+                <div className="content">
+                  <h1 className="text-white fs-4 text-decoration-none">
+                    <span>Kurumsal Tanıtım</span>
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      color="#fff"
+                      className="ms-3"
+                      size="sm"
+                    />
+                  </h1>
+                </div>
                 <img
                   src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.4.jpg"
                   alt=""
                 />
               </motion.div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

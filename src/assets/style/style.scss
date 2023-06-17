@@ -174,6 +174,7 @@ body {
 
     .hero-image {
         position: absolute;
+        top: -150px;
         z-index: 5;
 
         @media screen and (max-width:992px) {
@@ -451,7 +452,8 @@ body {
             overflow: hidden;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             transition: $transition;
-            &:hover{
+
+            &:hover {
                 border-right: #00acee 8px solid;
             }
         }
@@ -501,16 +503,35 @@ body {
         .project-image {
             width: 100%;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content {
+                position: absolute;
+                display: none;
+                z-index: 999;
+                transition: $transition;
+            }
+
+            &:hover {
+                img {
+                    filter: brightness(50%);
+                    transform: scale(1.05);
+                }
+
+                .content {
+                    display: flex;
+                    align-items: center;
+                }
+
+            }
 
             img {
                 width: 100%;
                 transition: $transition;
 
-                &:hover {
-                    filter: brightness(75%);
-                    transform: scale(1.05);
 
-                }
             }
         }
     }
@@ -532,7 +553,7 @@ body {
 
     .contact-button {
 
-        button {
+        a {
             box-shadow: 0px 2px 55px rgba(168, 182, 218, 0.32);
             font-weight: 600;
             letter-spacing: 1px;

@@ -11,7 +11,7 @@ import {
 
 export default function Hero() {
   return (
-    <div className="hero mb-5">
+    <div id="hero" className="hero mb-5">
       <motion.div
         initial={{ left: -250 }}
         animate={{ left: -220 }}

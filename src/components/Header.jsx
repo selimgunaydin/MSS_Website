@@ -51,7 +51,7 @@ export default function Header() {
                   <ul className="list-unstyled m-0 d-flex justify-content-center">
                     <li className="me-5">
                       <a
-                        href="#"
+                        href="#hero"
                         className="text-decoration-none text-secondary fw-semibold"
                       >
                         Ana Sayfa
@@ -167,7 +167,8 @@ export default function Header() {
           <ul className="list-unstyled px-4">
             <li className="mb-3 pb-3 d-flex align-items-center">
               <a
-                href="#"
+                onClick={handleMobileMenu}
+                href="#hero"
                 className="text-decoration-none text-white fw-semibold text-uppercase"
               >
                 Ana Sayfa
@@ -175,27 +176,29 @@ export default function Header() {
             </li>
             <li className="mb-3 pb-3 d-flex align-items-center">
               <a
-                href="#"
+                onClick={handleMobileMenu}
+                href="#industries"
                 className="d-flex justify-content-between w-100 align-items-center text-decoration-none text-white fw-semibold text-uppercase"
               >
                 Hizmetlerimiz
-                <FontAwesomeIcon icon={faPlusSquare} size="xl" />
               </a>
             </li>
             <li className="mb-3 pb-3 d-flex align-items-center">
               <a
-                href="#"
-                className="text-decoration-none text-white fw-semibold text-uppercase"
-              >
-                Projelerimiz
-              </a>
-            </li>
-            <li className="mb-3 pb-3 d-flex align-items-center">
-              <a
-                href="#"
+                onClick={handleMobileMenu}
+                href="#about"
                 className="text-decoration-none text-white fw-semibold text-uppercase"
               >
                 Hakkımızda
+              </a>
+            </li>
+            <li className="mb-3 pb-3 d-flex align-items-center">
+              <a
+                onClick={handleMobileMenu}
+                href="#projects"
+                className="text-decoration-none text-white fw-semibold text-uppercase"
+              >
+                Projelerimiz
               </a>
             </li>
           </ul>
@@ -215,7 +218,7 @@ export default function Header() {
             </div>
             <div className="contact-item d-flex align-items-center mb-3">
               <FontAwesomeIcon icon={faStar} color="#FFDC60" />
-              <p className="ms-3 mb-0 text-white">info@mssdev.com</p>
+              <p className="ms-3 mb-0 text-white">info@mssdev.online</p>
             </div>
           </div>
         </div>

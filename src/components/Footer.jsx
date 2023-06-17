@@ -56,9 +56,13 @@ export default function Footer() {
               className="col-12 mb-5"
             >
               <div className="contact-button d-flex justify-content-center">
-                <button className="btn px-5 py-4 text-white">
+                <a
+                  target="_blank"
+                  href="https://wa.me/+905312851812"
+                  className="btn px-5 py-4 text-white"
+                >
                   Bize Ulaşın
-                </button>
+                </a>
               </div>
             </motion.div>
             <div className="col-12 mb-5">
@@ -102,7 +106,7 @@ export default function Footer() {
                   <li className="ms-3 ms-lg-5">
                     <a
                       className="text-decoration-none text-white opacity-75"
-                      href="#header"
+                      href="#hero"
                     >
                       Ana Sayfa
                     </a>

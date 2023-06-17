@@ -27,7 +27,7 @@ export default function About() {
                 }}
                 className="personal-data d-flex"
               >
-                <img src={murat} alt="personal-image" className="col-3" />
+                <img src={murat} alt="personal-image" className="col-3"/>
                 <div className="ps-3 col-9 info d-flex flex-column justify-content-center">
                   <h1 className="fw-semibold fs-5">Murat Baran</h1>
                   <p className="text-muted mb-2">Back-End Developer</p>
