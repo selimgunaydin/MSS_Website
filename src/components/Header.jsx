@@ -8,7 +8,7 @@ import {
   faTimesCircle,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/img/logo.png"
+import logo from "../assets/img/logo.svg"
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState("");
