@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import sg from "../assets/img/SG.png";
 import gunaydin from "../assets/img/gunaydin.png";
 import mss from "../assets/img/MSS.png";
+import businessTracking from "../assets/img/business_tracking.png";
+import hasTesisat from "../assets/img/has_tesisat.png";
 
 export default function Projects() {
   return (
@@ -118,7 +120,7 @@ export default function Projects() {
                 <img src={gunaydin} alt="" />
               </motion.div>
             </a>
-            <a href="#" target="_blank" className="col-12 col-lg-4 p-2">
+            <a href="https://github.com/sfatektas/BusinessManagementApp" target="_blank" className="col-12 col-lg-4 p-2">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -130,7 +132,7 @@ export default function Projects() {
               >
                 <div className="content">
                   <h1 className="text-white fs-4 text-decoration-none">
-                    <span>Kurumsal Tanıtım</span>
+                    <span>Kurumsal Yönetim</span>
                     <FontAwesomeIcon
                       icon={faArrowUpRightFromSquare}
                       color="#fff"
@@ -140,12 +142,12 @@ export default function Projects() {
                   </h1>
                 </div>
                 <img
-                  src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.2.jpg"
+                  src={businessTracking}
                   alt=""
                 />
               </motion.div>
             </a>
-            <a href="#" target="_blank" className="col-12 col-lg-4 p-2">
+            <a href="https://hastesisat.com.tr/" target="_blank" className="col-12 col-lg-4 p-2">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -167,7 +169,7 @@ export default function Projects() {
                   </h1>
                 </div>
                 <img
-                  src="https://weblearnbd.net/tphtml/collax/collax/assets/img/project/project-6.3.jpg"
+                  src={hasTesisat}
                   alt=""
                 />
               </motion.div>
