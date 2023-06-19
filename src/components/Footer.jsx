@@ -8,6 +8,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
+import logoWhite from "../assets/img/logo_white.png"
 
 export default function Footer() {
   return (
@@ -92,12 +93,7 @@ export default function Footer() {
               <div className="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-start mb-3 mb-lg-0">
                 <div className="logo">
                   <a href="#" className="text-decoration-none display-6 ">
-                    <FontAwesomeIcon
-                      icon={faCube}
-                      color="#82cefd"
-                      className="me-3"
-                    />
-                    <span className="text-white ms-2">M S S </span>
+                   <img src={logoWhite} alt="logo" width="250px" />
                   </a>
                 </div>
               </div>

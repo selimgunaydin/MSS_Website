@@ -2,15 +2,13 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faAngleDown,
   faArrowDown,
   faCube,
   faBars,
-  faClose,
   faTimesCircle,
-  faPlusSquare,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/img/logo.png"
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState("");
@@ -37,12 +35,7 @@ export default function Header() {
               <div className="col-lg-3">
                 <div className="header-start logo d-flex justify-content-start">
                   <a href="#" className="text-decoration-none display-6 ">
-                    <FontAwesomeIcon
-                      icon={faCube}
-                      color="#82cefd"
-                      className="me-3"
-                    />
-                    <span className="text-secondary ms-2">M S S </span>
+                    <img src={logo} alt="logo" width="200px" />
                   </a>
                 </div>
               </div>
