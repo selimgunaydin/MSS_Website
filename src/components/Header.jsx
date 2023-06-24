@@ -8,7 +8,9 @@ import {
   faTimesCircle,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/img/logo.svg"
+import logo from "../assets/img/logo.svg";
+import logoWhite from "../assets/img/logo_white.svg"
+
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState("");
@@ -117,13 +119,8 @@ export default function Header() {
           <div className="row align-items-center justify-content-center">
             <div className="col-6">
               <div className="logo">
-                <a href="#" className="text-decoration-none display-6 ">
-                  <FontAwesomeIcon
-                    icon={faCube}
-                    color="#82cefd"
-                    className="me-3"
-                  />
-                  <span className="text-secondary ms-2">M S S </span>
+                <a href="#" className="text-decoration-none">
+                  <img src={logo} alt="logo" width="200px" />
                 </a>
               </div>
             </div>
@@ -145,10 +142,9 @@ export default function Header() {
       >
         <div className="d-flex w-100 justify-content-between align-items-center mb-5">
           <div className="logo ms-4">
-            <a href="#" className="text-decoration-none display-5 ">
-              <FontAwesomeIcon icon={faCube} color="#fff" className="me-3" />
-              <span className="text-white ms-2">M S S </span>
-            </a>
+          <a href="#" className="text-decoration-none display-6 ">
+                    <img src={logoWhite} alt="logo" width="200px" />
+                  </a>
           </div>
           <div className="close-mobile-menu me-2">
             <button className="btn" onClick={handleMobileMenu}>
