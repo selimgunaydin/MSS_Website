@@ -8,7 +8,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import logoWhite from "../assets/img/logo_white.svg"
+import logoWhite from "../assets/img/logo_white.png"
 
 export default function Footer() {
   return (

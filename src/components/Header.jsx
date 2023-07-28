@@ -8,8 +8,8 @@ import {
   faTimesCircle,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/img/logo.svg";
-import logoWhite from "../assets/img/logo_white.svg"
+import logo from "../assets/img/logo.png";
+import logoWhite from "../assets/img/logo_white.png"
 
 
 export default function Header() {
@@ -120,7 +120,7 @@ export default function Header() {
             <div className="col-6">
               <div className="logo">
                 <a href="#" className="text-decoration-none">
-                  <img src={logo} alt="logo" width="200px" />
+                  <img src={logo} alt="logo" width="150px" />
                 </a>
               </div>
             </div>
